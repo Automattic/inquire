@@ -1,0 +1,33 @@
+<html>
+<head>
+<link href="css/eggplant/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+</head>
+<body>
+	<div id="editor">{ "query" : { "match_all": {} } }</div>
+	<div id="help">
+
+	</div>
+	<div id="history">
+
+	</div>
+</body>
+<script src="lib/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/ace-min/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/ace-min/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script src="lib/jquery-ui-1.10.4.custom.min.js"></script>
+
+<script type="text/javascript" src="lib/underscore-1.6.0.min.js"></script>
+<script type="text/javascript" src="lib/backbone-1.1.2.min.js"></script>
+<script type="text/javascript" src="lib/spin.min.js"></script>
+<script type="text/javascript" src="lib/select2-3.4.8/select2.min.js"></script>
+
+<script>
+	var editor = ace.edit("editor");
+	editor.setTheme("ace/theme/twilight");
+	var JavaScriptMode = require("ace/mode/javascript").Mode;
+	editor.getSession().setMode(new JavaScriptMode());
+</script>
+
+</html>
