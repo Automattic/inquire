@@ -1,0 +1,49 @@
+
+
+body {
+	overflow: hidden;
+	margin: 0;
+}
+
+div#hist-button {
+
+}
+
+div#help-button {
+
+}
+
+div#editor {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	width: 400px;
+	height: 100%;
+	background: #EEE;
+}
+
+div#results {
+	position: absolute;
+	top: 50px;
+	left: 320px;
+	width: 100%;
+	height: 100%;
+	background: #444;
+}
+
+div#help {
+	display: none;
+	z-index: 100;
+	margin: 100px;
+	width: 500px;
+	height: 500px;
+	overflow: scroll;
+}
+
+div#history {
+	display: none;
+	z-index: 100;
+	width: 500px;
+	height: 500px;
+	overflow: scroll;
+}

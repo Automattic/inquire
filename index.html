@@ -1,9 +1,15 @@
 <html>
 <head>
 <link href="css/eggplant/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+<link href="css/inquire.css" rel="stylesheet">
 </head>
 <body>
-	<div id="editor">{ "query" : { "match_all": {} } }</div>
+	<div id="editor">
+SERVER localhost:9200
+POST /_search
+{ "query" : { "match_all": {} } }	
+</div>
+	<div id="results"></div>
 	<div id="help">
 
 	</div>
@@ -28,6 +34,11 @@
 	editor.setTheme("ace/theme/twilight");
 	var JavaScriptMode = require("ace/mode/javascript").Mode;
 	editor.getSession().setMode(new JavaScriptMode());
+
+	var results = ace.edit("results");
+	results.setTheme("ace/theme/twilight");
+	var JavaScriptMode = require("ace/mode/javascript").Mode;
+	results.getSession().setMode(new JavaScriptMode());
 </script>
 
 </html>
